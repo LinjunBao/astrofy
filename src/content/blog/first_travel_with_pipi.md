@@ -1,7 +1,7 @@
 ---
-title: "First travel with pipi"
+title: "First Flight with pipi"
 description: "Flight to Xining."
-pubDate: "Aug 29 2024"
+pubDate: "Aug 18 2024"
 heroImage: "/xining.webp"
 badge: "Life"
 tags: ["pipi","travel"]
