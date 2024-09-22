@@ -1,5 +1,5 @@
 ---
-title: "First day to kindergarden"
+title: "皮皮正式上学第一天"
 description: "A real calm boy."
 pubDate: "Sep 2 2024"
 heroImage: "/naughty_pipi.webp"

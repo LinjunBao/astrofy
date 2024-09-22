@@ -1,19 +1,14 @@
-// Adapted from https://equk.co.uk/2023/02/02/generating-slug-from-title-in-astro/
+import slugify from 'slugify';
 
-import { GENERATE_SLUG_FROM_TITLE } from '../config'
+export default function createSlug(text: string, fallback: string): string {
+  if (!text) return fallback;
 
-export default function (title: string, staticSlug: string) {
-  return (
-    !GENERATE_SLUG_FROM_TITLE ? staticSlug : title
-      // remove leading & trailing whitespace
-      .trim()
-      // output lowercase
-      .toLowerCase()
-      // replace spaces
-      .replace(/\s+/g, '-')
-      // remove special characters
-      .replace(/[^\w-]/g, '')
-      // remove leading & trailing separtors
-      .replace(/^-+|-+$/g, '')
-  )
+  const slug = slugify(text, {
+    lower: true,
+    strict: true,
+    locale: 'zh-CN', // 支持中文
+    remove: /[*+~.()'"!:@]/g
+  });
+
+  return slug || fallback; // 如果生成的 slug 为空，使用 fallback
 }

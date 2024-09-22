@@ -1,5 +1,5 @@
 ---
-title: "First Flight with pipi"
+title: "皮皮的初次飞行"
 description: "Flight to Xining."
 pubDate: "Aug 18 2024"
 heroImage: "/xining.webp"
